@@ -1,0 +1,23 @@
+<header>
+  <h1 class="title" data-bind="title"></h1>
+</header>
+<section class="body">
+  <div class="canvas">
+    <h2 class="value" data-bind-class="value" data-bind="today | shortenedNumber | prepend prefix | append suffix"></h2>
+
+    <div class="row more-info">
+      <div class="left">
+        <p>This week<p>
+        <p class="last-downtime" data-bind="week"></p>
+      </div>
+      <div class="right">
+        <p>This month<p>
+        <p class="response_time" data-bind="month"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <p class="updated-at" data-bind="updatedAtMessage"></p>
+  </div>
+</section>
